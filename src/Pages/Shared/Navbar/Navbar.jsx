@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-
+import defaultProfile from "../../../assets/user.png"
 
 const Navbar = () => {
 
@@ -34,7 +34,7 @@ const Navbar = () => {
             <div className="navbar-end">
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                     <div className="w-10 rounded-full">
-                        <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                        <img src={defaultProfile} />
                     </div>
                 </label>
                 <Link className="btn" to='/login'>Login</Link>
